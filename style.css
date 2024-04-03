@@ -1,10 +1,20 @@
+/* html{
+    scroll-behavior: smooth;
+} */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .contact-container {
-    /* padding: 20px; */
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -16,13 +26,14 @@ h1 {
     background: linear-gradient(to right, blue, black);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 250px;
+    width: 280px;
 }
 
 .cards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
@@ -46,13 +57,7 @@ h1 {
 }
 
 .icon {
-    /* background-color: #511DAB;
-    width: 27%;
-    height: 47%;
-    border-radius: 50px;
-    position: absolute;
-    display: flex;
-    bottom: 159px; */
+
     background-color: #511DAB;
     width: 20%;
     height: 35%;
@@ -60,24 +65,16 @@ h1 {
     border-radius: 50px;
     position: absolute;
     bottom: 159px;
+    display: flex;
 }
 
 .icon .fa-solid {
-    /* font-weight: 900;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    align-self: center;
-    color: white;
-    left: 16px;
-    top: 3px; */
-
     font-weight: 900;
     text-align: center;
     position: relative;
     align-self: center;
     color: white;
-    top: 8px;
+    /* top: 8px; */
 }
 
 .call-us {
@@ -129,20 +126,27 @@ h2 {
     font-variation-settings:
     "slnt" 0;
     margin-top: 50px;
+    display: flex;
 }
 
 
-@media screen and (max-width: 768px) {
-    body {
-        /* background-color: red; */
+@media screen and (max-width: 768px)  {
+    html{
+        scroll-behavior: smooth;
     }
 
-    h1 {
+    h1{
         align-self: center;
     }
 
     .cards{
         justify-content: center;
         gap: 18px;
+    }
+
+    h2{
+        justify-content: center;
+        align-self: center;
+        text-align: center;
     }
 }
